@@ -1,0 +1,295 @@
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Arial;
+}
+
+header{
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    background-image:url(../IMG/istockphoto-1336378273-640x640.jpg) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 2px;
+    border-radius: 1em;
+    
+}
+header h1 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.migas-de-pan{
+    position: absolute;
+    right: 5%;
+    top:205px;
+    background-color: #00d5ff83;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
+
+
+.migas-de-pan p a{
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    background-color: #00d5ff83;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    margin-right: 2px;
+    max-width: 250px;
+    border-radius: 1em;
+}
+
+.navegador {
+    height: 60%;
+    width: 100%;
+    padding: 10%;
+    box-sizing: border-box;
+}
+.navegador ul{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+}
+
+.navegador ul li {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.navegador ul li a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 2em;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.navegador ul li a:hover {
+    color:blue;
+    border-color: blue;
+}
+
+.navegador ul li a i{
+    
+    font-size: 20px;
+}
+
+
+.comentario{
+
+    background-color: white;
+    width: 90%;
+    height: 270px;
+    margin-bottom:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    gap:5px;
+}
+
+.comentario img {
+    width: 50%;
+    min-width: 100px;
+    height: 120px;
+    border-radius: 100%;
+}
+
+.comentario-texto{
+    text-align: center;
+    font-size: 12px;
+    width: 90%;
+    height: 70px;
+}
+
+
+.contenedor {
+    display: flex;
+    width: 100%;
+
+    
+}
+main {
+/*width: 75%;*/
+width: 100vw;
+height: 100vh;
+box-sizing: border-box;
+}
+
+
+
+footer{
+    display: flex;
+    width: 100%;
+    background-color: lightgrey;
+    padding: 2px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 1em;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+}
+.contenido {
+    display: flex;
+    width: 90%;
+    margin: 0;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2px;
+    border-radius: 1em;
+}
+
+.contenido div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+}
+
+
+
+.contenido li {
+    list-style: none;
+}
+
+.contenido li a {
+    color:black;
+}
+
+.nombres-final {
+    align-self: flex-end;
+    
+}
+
+.final {
+    align-self: center;
+}
+
+
+
+@media screen and (max-width:650px){
+    
+    .contenedor{
+        flex-direction: column;
+        width: 100%;
+    }
+    section {
+        height: 200px;
+        max-width: none;
+        align-items: space-evenly;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .navegador{
+        padding: 0 5px;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .navegador ul{
+
+        gap: 2px;
+        flex-direction: row;
+        
+    }
+    .contenido{
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .contenido div {
+        width: 100%;
+
+    }
+    .nombres-final {
+        align-self: stretch;
+        
+    }
+    main {
+        width: 100%;
+
+    
+    }
+
+    .migas-de-pan{
+        position: static;
+        align-self: flex-end;
+        text-align: center;
+        margin: 5px;
+        
+        
+    }
+    
+    .comentario{
+        background-color: white;
+        width: 100%;
+        height: 200px;
+        margin-bottom:1px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 30px;
+        gap:0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    .comentario img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .comentario-texto{
+        text-align: center;
+        
+    }
+
+
+}
+

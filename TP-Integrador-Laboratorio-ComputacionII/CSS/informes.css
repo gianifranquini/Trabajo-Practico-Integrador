@@ -1,0 +1,284 @@
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}.cont-moneda,.cont-datos {
+    width: 90%;
+    height: 40%;
+    min-height: 200px;
+    
+}
+
+.cont-moneda {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap :5px;
+    
+}
+
+
+
+.grafico {
+    border: 1px solid black;
+    width: 70% !important;
+    height: 250px !important;
+    margin-right: 10px;
+
+}
+
+.seleccion-moneda {
+    width: 45%;
+    max-width: 350px;
+    height: 30%;
+    border-radius: 20px;
+    background-color: #00d4ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seleccion-moneda div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seleccion-moneda div img{
+width: 40px;
+
+}
+
+.seleccion-moneda div select{
+    width: 50%;
+    }
+
+.cont-datos{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    border-radius: 15px;
+    box-sizing: border-box;
+    
+    
+}
+
+.cont-datos-cabecera{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,19%);
+    gap:7px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.cont-datos-cabecera p {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+
+.cont-datos-tabla {
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(5,19%);
+    justify-content: center;
+    align-content: start;
+    align-items: center;
+    gap:7px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 5px 7px;
+    border-radius:15px;
+    
+
+}
+
+.moneda {
+    grid-column: 1/6;
+    background-color: lightgray;
+    width: 100%;
+    height: 20px;
+    max-height: 30px;
+    display: flex;
+    border-radius: 50px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.datos {
+    border:1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.datos i{
+    margin-top: 2px;
+}
+
+.compartir-info {
+    background-color: black;
+    color: white;
+    width: 20%;
+    max-width: 300px;
+    min-width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    
+}
+
+.compartir-info:hover{
+    color: goldenrod;
+}
+
+.sombra-compartir{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.5);
+    position:fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.compartir{
+    border: 3px solid black;
+    background-color: lightblue;
+    border-radius: 30px;
+    width: 60%;
+    max-width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+
+}
+
+.compartir form{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 20px repeat(3,1fr);
+    width: 95%;
+    height: 90%;
+
+
+    grid-template-areas:
+     ". . boton"
+     "h3 h3 h3"
+     "datos datos datos"
+     ". boton-enviar ."
+
+    ;
+}
+
+.compartir i{
+    grid-area: boton;
+    justify-self: end;
+}
+.compartir i:hover{
+    color: red;
+}
+
+
+.compartir h3{
+    grid-area: h3;
+    justify-self: center;
+    align-self: start;
+    font-size: 28px;
+    
+}
+
+.div-datos{
+    grid-area: datos;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div-datos div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-datos div label{
+   width: 80px;
+   font-size: 20px;
+   text-align: center;
+}
+
+.div-datos div input{
+    width: 70%;
+    height: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.compartir button{
+grid-area: boton-enviar;
+width: 150px;
+height: 40px;
+border-radius: 30px;
+justify-self: center;
+align-self: center;
+}
+
+.compartir button:hover{
+    background-color:rgb(216, 207, 207);
+}
+
+.sin-archivos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sin-archivos p{
+    font-size: 30px;
+    
+}
+
+
+@media screen and (max-width:650px){
+
+    .grafico{
+        height: 180px !important;
+        width: 90vw !important;
+    }
+
+    .cont-moneda{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .cont-datos-cabecera p {
+        font-size: 10px;
+    }
+    .compartir h3{
+        display: block;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+

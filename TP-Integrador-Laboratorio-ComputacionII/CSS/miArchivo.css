@@ -1,0 +1,112 @@
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    
+}
+.cabecera-main{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    align-items: center;
+    width: 100%;
+}
+.cabecera-main h2 {
+    grid-column-start:2;
+   justify-self: center;
+}
+.cabecera-main img {
+grid-column-start:3;
+width: 40px;
+justify-self: center;
+}
+.datos{
+    padding: 10px;
+    height: 80%;
+    width: 95%;
+    background-color: #00d4ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-sizing: border-box;
+    
+}
+.cont-mi-archivo {
+    height: 90%;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(5,19%);
+    justify-content: center;
+    align-content: start;
+    gap: 5px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    
+}
+
+
+.cont-cabecera-tabla {
+    grid-column: 1/6;
+    display: grid;
+    grid-template-columns: repeat(5,19%);
+    width: 95%;
+    gap:5px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 30px;
+    margin-bottom: 5px;
+    
+}
+.cabecera-tabla {
+   text-align: center;
+   color: white;
+    
+}
+
+.fecha-mi-archivo {
+    grid-column: 1/6;
+    align-self: center;
+    background-color: silver;
+    border-radius: 30px;
+    padding: 2px;
+    padding-left: 10px;
+}
+
+.datos-miarchivo {
+    
+    
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.datos-miarchivo p{
+text-align: center;
+font-size: 15px;
+}
+
+.datos-miarchivo img {
+    width: 18px;
+}
+
+.sin-archivos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sin-archivos p{
+    font-size: 30px;
+    
+}
+

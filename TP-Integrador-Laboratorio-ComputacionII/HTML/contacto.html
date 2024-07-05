@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico Integrador</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+
+    <header id="head">
+        <h1><img src="" alt="">Cotizador de Monedas</h1>
+    </header>
+
+    <div class="contenedor">
+        <section>
+            <nav class="navegador">
+                <ul>
+                    <li><a href="index.html" id="Inicio"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                    <li><a href="miArchivo.html" id="Mi-Archivo"><i class="fa-solid fa-folder"></i></i>Mi Archivo</a></li>
+                    <li><a href="informes.html" id="Informes"><i class="fa-solid fa-file"></i>Informes</a></li>
+                    <li><a href="contacto.html" id="Contactenos"><i class="fa-solid fa-circle-user"></i>Contáctenos</a></li>
+
+                </ul>
+            </nav>
+            <div class="comentario">
+                <img src="../IMG/cara.jpg" alt="foto" id="imagen-comentario">
+                <div class="comentario-texto">
+                    <h3 id="nombre-comentario">Juan Pérez</h3>
+                    <p id="texto-comentario">Es la mejor página que visité en mi vida</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="migas-de-pan">
+            <p ><a href="index.html">Inicio</a> / Contacto</p>
+        </div>
+
+
+
+        <main>
+          <h2>Contacto Web Cotizaciones</h2> 
+          <div class="contenedor-global">
+          <div class="contenedor-contacto">
+            <h3>Datos de Contacto</h3>
+            <form id="form">
+
+                <div>
+                    <label for="from_name">Nombre</label>
+                    <input type="text" id="from_name" name="from_name" required>
+                </div>
+                <div>
+                    <label for="email_id">Email</label>
+                    <input type="email" id="email_id" name="email_id" required>
+                </div>
+                <div class="mensaje">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="botones">
+                    <button type="button" id="limpiar">Limpiar</button>
+                    <button type="button" id="button">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="contenido-contacto">
+            <p>Si tiene alguna sugerencia o inconveniente, por favor complete el siguiente formulario y
+                envíenoslo. Lo contactaremos a la brevedad.<br><br>Esta web está desarrollada utilizando <a href="https://dolarapi.com/">https://dolarapi.com/</a></p></p>
+            <div class="datos-contacto">
+                <div class="texto-datos-contacto">
+                <h3>DATOS DE CONTACTO</h3>
+                <p>Universidad Tecnológica Nacional</p>
+                <p>ZEBALLOS 1341 - S2000BQA</p>
+                <p>ROSARIO</p>
+                <p>0341 - 4481871</p></div>
+                <img src="../IMG/utn-logo.jpg" alt="" class="logo">
+            </div> 
+        </div>
+          </div>
+        </main>
+
+
+
+
+
+
+    </div>
+    <footer>
+
+        <div class="contenido">
+
+            <div>
+                <h3>Institucional</h3>
+                <ul>
+                    <li><a href="#">¿Quienes Somos?</a></li>
+                    <li><a href="#">Socios Estratégicos</a></li>
+                    <li><a href="#">Trabaje con nosotros</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Accsesos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="miArchivo.html">Mi Archivo</a></li>
+                    <li><a href="informes.html">Informes</a></li>
+                    <li><a href="contacto.html">Contáctenos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <ul>
+                    <li>Universidad Tecnologica Nacional</li>
+                    <li>Zeballos 1341 - S200BQA -</li>
+                    <li>Rosario</li>
+                    <li>0341 - 4481871</li>
+                    <li><b>¡Escribanos!</b></li>
+                </ul>
+
+
+            </div>
+
+            <div class="nombres-final">
+                <p>
+                    <b>Desarollado Por </b><br>
+                    Valentino Gentiletti, Luca Deminas, Gianina Franquini y Fernando Koss
+                    <br>1TUP7 - 2024
+                </p>
+            </div>
+        </div>
+
+
+        <p class="final">TUP - Cátedra de Laboratorio de Computación 2 - Año - 2024</p>
+    </footer>
+    
+</body>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('tvR12jHg4Tez_c-w3')
+</script>
+<script src="../JS/common.js"></script>
+<script src="../JS/contacto.js"></script>
+</html>

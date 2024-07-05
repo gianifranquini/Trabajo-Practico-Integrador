@@ -1,0 +1,146 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contenedor-global {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+    margin: 0 20px;
+    box-sizing: border-box;
+}
+.contenedor-contacto{
+    border-radius: 20px 50px;
+    background-color: lightblue;
+    width: 50%;
+    max-width: 550px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contenedor-contacto form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 70%;
+}
+
+.contenedor-contacto form div{
+    width: 70%;
+    display: flex;
+    justify-content:center;
+    
+}
+
+.contenedor-contacto form div input,textarea{
+    width: 60%;
+    
+}
+
+.contenedor-contacto form div label {
+    font-size: 20px;
+    width: 120px;
+    
+}
+
+.contenedor-contacto h3 {
+    font-size: 25px;
+}
+
+.botones {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones button{
+    margin: 4px;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+.botones button:hover{
+    background-color: rgb(211, 206, 206);
+}
+
+.mensaje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.contenido-contacto{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.contenido-contacto p{
+    width: 80%;
+    
+    
+    
+}
+
+.datos-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+.logo{
+    width: 30%;
+    min-width: 100px;
+    margin-left: 10px;
+}
+
+
+
+
+
+@media screen and (max-width:650px){
+    main h2 {
+        margin: 10px;
+    }
+    .contenedor-global{
+        flex-direction: column;
+        justify-content: flex-start;
+        
+        width: 100%;
+        height: 90%;
+        
+    }
+    .contenedor-contacto{
+        width: 90%;
+        margin-bottom: 5px;
+        
+    }
+
+    .contenido-contacto{
+        width: 100%;
+    }
+    
+    .datos-contacto{
+        margin: 5px;
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico Integrador</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/miArchivo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body onload="recarga()">
+
+
+
+    <header id="head">
+        <h1><img src="" alt="">Cotizador de Monedas</h1>
+    </header>
+
+    <div class="contenedor">
+        <section>
+            <nav class="navegador">
+                <ul>
+                    <li><a href="index.html" id="Inicio"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                    <li><a href="miArchivo.html" id="Mi-Archivo"><i class="fa-solid fa-folder"></i></i>Mi Archivo</a></li>
+                    <li><a href="informes.html" id="Informes"><i class="fa-solid fa-file"></i>Informes</a></li>
+                    <li><a href="contacto.html" id="Contactenos"><i class="fa-solid fa-circle-user"></i>Contáctenos</a></li>
+
+                </ul>
+            </nav>
+            <div class="comentario">
+                <img src="../IMG/cara.jpg" alt="foto" id="imagen-comentario">
+                <div class="comentario-texto">
+                    <h3 id="nombre-comentario">Juan Pérez</h3>
+                    <p id="texto-comentario">Es la mejor página que visité en mi vida</p>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="migas-de-pan">
+            <p ><a href="index.html">Inicio</a> / Mi Archivo</p>
+        </div>
+
+
+
+
+        <main>
+            <div class="cabecera-main">
+                <h2>Mi Archivo</h2>
+                <img src="../IMG/printer_icon_123440.ico" alt="" onclick="imprSelec(`datos-tabla`)">
+            </div>
+            <div class="datos" id="datos-tabla">
+                <div class="cont-cabecera-tabla">
+                    <p class="cabecera-tabla"><b>FECHA</b></p>
+                    <p class="cabecera-tabla"><b>MONEDA</b></p>
+                    <p class="cabecera-tabla"><b>COMPRA</b></p>
+                    <p class="cabecera-tabla"><b>VENTA</b></p>
+                    <p class="cabecera-tabla"><b>ACCIÓN</b></p>
+                </div>
+                <div class="cont-mi-archivo" id="cont-mi-archivo">
+                 
+                </div>
+            </div>
+        </main>
+
+
+
+
+
+
+    </div>
+    <footer>
+
+        <div class="contenido">
+
+            <div>
+                <h3>Institucional</h3>
+                <ul>
+                    <li><a href="#">¿Quienes Somos?</a></li>
+                    <li><a href="#">Socios Estratégicos</a></li>
+                    <li><a href="#">Trabaje con nosotros</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Accsesos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="miArchivo.html">Mi Archivo</a></li>
+                    <li><a href="informes.html">Informes</a></li>
+                    <li><a href="contacto.html">Contáctenos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <ul>
+                    <li>Universidad Tecnológica Nacional</li>
+                    <li>Zeballos 1341 - S200BQA -</li>
+                    <li>Rosario</li>
+                    <li>0341 - 4481871</li>
+                    <li><b>¡Escribanos!</b></li>
+                </ul>
+
+
+            </div>
+
+            <div class="nombres-final">
+                <p>
+                    <b>Desarollado Por </b><br>
+                    Valentino Gentiletti, Luca Deminas, Gianina Franquini y Fernando Koss
+                    <br>1TUP7 - 2024
+                </p>
+            </div>
+        </div>
+
+
+        <p class="final">TUP - Cátedra de Laboratorio de Computación 2 - Año - 2024</p>
+    </footer>
+    
+</body>
+<script src="../JS/common.js"></script>
+<script src="../JS/miArchivos.js"></script>
+</html>
